@@ -1,34 +1,34 @@
-#include <stdio.h> //Incluir biblioteca com as funções padrão de entrada e saída de dados
-#include <stdlib.h> //Incluir biblioteca para manipulação da memória do computador.
-#include <math.h> //Incluir biblioteca com funções matemáticas.
+#include <stdio.h> //Incluir biblioteca com as funÃ§Ãµes padrÃ£o de entrada e saÃ­da de dados
+#include <stdlib.h> //Incluir biblioteca para manipulaÃ§Ã£o da memÃ³ria do computador.
+#include <math.h> //Incluir biblioteca com funÃ§Ãµes matemÃ¡ticas.
 
 /*
 Programa de estudo em C para calcular IMC e peso ideal.
 Autor: Uelbert Borges.
 Data: Setembro de 2017.
-Versão: 1.0
-Disponível em:
+VersÃ£o: 1.0
+DisponÃ­vel em: https://github.com/UelbertBorges/Clang/blob/master/imc.c
 
 */
 
-int main() //Função princpal, tem que estar em todo programa em C.
+int main() //FunÃ§Ã£o princpal, tem que estar em todo programa em C.
 {
-    //Declaração e Inicialização de variavéis.
+    //DeclaraÃ§Ã£o e InicializaÃ§Ã£o de variavÃ©is.
 
     float peso, altura, imc, pesoIdeal = 0;
     int alturacm, sexo = 0;
 
-    //Saída e entrada de dados com perguntas e respostas do usuário.
+    //SaÃ­da e entrada de dados com perguntas e respostas do usuÃ¡rio.
 
     printf("\nDigite o seu peso \n");
-    scanf("%f", &peso); //Em C é preciso usar o & na frente do nome de uma variável para que o compilador consiga encontrar o local da variável na memória.
+    scanf("%f", &peso); //Em C Ã© preciso usar o & na frente do nome de uma variÃ¡vel para que o compilador consiga encontrar o local da variÃ¡vel na memÃ³ria.
     printf("\nDigite a sua altura \n");
     scanf("%f", &altura);
     printf("\nDigite o seu sexo (1(M) ou 2(F))\n");
     scanf("%i", &sexo);
 
     alturacm = altura * 100;
-    imc = peso/pow(altura, 2); //pow é uma função da biblioteca math.h
+    imc = peso/pow(altura, 2); //pow Ã© uma funÃ§Ã£o da biblioteca math.h
 
     //Condicional if em C.
 
@@ -59,7 +59,7 @@ int main() //Função princpal, tem que estar em todo programa em C.
     }
     else if ((imc >= 25) && (imc <= 29.9)) {
 
-        printf("\nVoce está levemente acima do peso ideal! \n");
+        printf("\nVoce estÃ¡ levemente acima do peso ideal! \n");
         printf("\nO seu imc e: %.2f\n", imc);
         printf("\nO seu peso ideal e: %.2f\n", pesoIdeal);
         printf("\nVoce esta: %.2f", peso-pesoIdeal);
@@ -67,7 +67,7 @@ int main() //Função princpal, tem que estar em todo programa em C.
     }
     else if ((imc >= 30) && (imc <= 34.9)) {
 
-        printf("\nVoce está com obesidade grau I! \n");
+        printf("\nVoce estÃ¡ com obesidade grau I! \n");
         printf("\nO seu imc e: %.2f\n", imc);
         printf("\nO seu peso ideal e: %.2f\n", pesoIdeal);
         printf("\nVoce esta: %.2f", peso-pesoIdeal);
@@ -75,7 +75,7 @@ int main() //Função princpal, tem que estar em todo programa em C.
     }
     else if ((imc >= 35) && (imc <= 39.9)) {
 
-        printf("\nVoce está com obesidade grau II (severa)! \n");
+        printf("\nVoce estÃ¡ com obesidade grau II (severa)! \n");
         printf("\nO seu imc e: %.2f\n", imc);
         printf("\nO seu peso ideal e: %.2f\n", pesoIdeal);
         printf("\nVoce esta: %.2f", peso-pesoIdeal);
@@ -84,7 +84,7 @@ int main() //Função princpal, tem que estar em todo programa em C.
     else if (imc >= 40) {
 
 
-        printf("\nVoce está com obesidade grau III (morbida)! \n");
+        printf("\nVoce estÃ¡ com obesidade grau III (morbida)! \n");
         printf("\nO seu imc e: %.2f\n", imc);
         printf("\nO seu peso ideal e: %.2f\n", pesoIdeal);
         printf("\nVoce esta: %.2f", peso-pesoIdeal);
@@ -100,5 +100,5 @@ int main() //Função princpal, tem que estar em todo programa em C.
         printf("kg acima do seu peso ideal\n");
     }
 
-    return 0; //Toda função em C deve retornar um valor. return 0 é usado comumente para quando a função é executada corretamente.
+    return 0; //Toda funÃ§Ã£o em C deve retornar um valor. return 0 Ã© usado comumente para quando a funÃ§Ã£o Ã© executada corretamente.
 }
