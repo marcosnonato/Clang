@@ -108,14 +108,33 @@ int main()
 	
 	//EXERCICIO 04
 	
-	int bool;
+	/*int bool;
 	
 	printf("Digite um valor qualquer\n\n");
 	scanf("%i", &bool);
 	
 	printf("\n Zero = %s", bool == 0 ? "false" : "true"); //FUNCIONA DENTRO DE FUNÇÕES
 	
-	//bool == 0 ? printf("\nFALSE") : printf("\nTRUE"); //FORMA DO TERNARIO EM C
+	//bool == 0 ? printf("\nFALSE") : printf("\nTRUE"); //FORMA DO TERNARIO EM C*/
+	
+	
+	//SWITCH CASE
+	
+	int n;
+	printf("\nDigite um numero: ");
+	scanf("%i", &n);
+	
+	switch (n)
+	{
+		case 1: printf("%c", 'A'); break;
+		case 2: printf("%c", 'E'); break;
+		case 3: printf("%c", 'I'); break;
+		case 4: printf("%c", 'O'); break;
+		default: printf("%c", '#'); break;
+		case 5: printf("%c", 'U'); break;	
+	}
+	
+		printf("%c\n", '.');
 	
 		
 		
